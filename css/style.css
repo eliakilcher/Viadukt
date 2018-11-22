@@ -1,0 +1,319 @@
+/*** IMPORT ***/
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,400i,700|Roboto+Condensed:400,700|Roboto+Mono:400,700|Roboto:400,700');
+
+/*** ALLGEMEIN ***/
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  color: #000;
+}
+img {
+  width: 100%;
+}
+a {
+  text-decoration: none;
+}
+.row:after {
+  clear: both;
+  display: table;
+  content: "";
+}
+.wrapper {
+  width: 60%;
+  padding: 0 20px;
+  margin: 0 15% 0 25%;
+  margin-top: 220px;
+}
+.col-50 {
+  width: 50%;
+  float: left;
+}
+.col-25 {
+  width: 25%;
+  float: left;
+}
+.parallax-01, .parallax-02 {
+  position: relative;
+}
+/*** TEXT ***/
+.roboto-cond {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+.roboto-mono {
+  font-family: 'Roboto Mono', monospace;
+}
+.merriweather {
+  font-family: 'Merriweather', serif;
+}
+.bold {
+  font-weight: bold;
+}
+.grossgeschrieben {
+  text-transform: uppercase;
+}
+.text-align-right {
+  text-align: right;
+}
+h1 {
+  font-size: 3.6em;
+  margin-bottom: 20px;
+}
+h2 {
+  font-size: 3.6em;
+  padding-bottom: 20px;
+}
+
+/*** MENU ***/
+.menu-links a.roboto-cond:hover {
+  text-transform: lowercase;
+  letter-spacing: .16em;
+}
+.menu-links a.roboto-mono:hover {
+  text-transform: uppercase;
+}
+.menu-links a.merriweather:hover {
+  font-style: italic;
+}
+.menu-links {
+  text-align: center;
+  font-size: 3.4em;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.menu-links a {
+  padding: 40px 0;
+  display: block;
+  color: #fff;
+}
+.menu {
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+  position: fixed;
+  z-index: 13;
+  top: 0;
+  display: none;
+}
+.menu-gross {
+  display: block;
+  z-index: 13;
+}
+.menu-gross a.menu-burger {
+  color: #fff;
+  z-index: 16;
+}
+.menu-oeffnen-weg {
+  display: none;
+}
+.menu .menu-burger {
+  color: #fff;
+  z-index: 12;
+}
+.menu .menu-strich {
+  background-color: #fff;
+  z-index: 20;
+}
+#logo-weiss {
+  width: 15%;
+  position: fixed;
+  top: 5px;
+  left: 10%;
+  z-index: 12;
+}
+
+/*** SEITEN START ***/
+#logo {
+  width: 15%;
+  position: fixed;
+  top: 5px;
+  left: 10%;
+}
+.seiten-titel {
+  font-size: 2em;
+}
+.seiten-titel .roboto-cond {
+  font-size: 2.6em;
+}
+.seiten-titel .roboto-cond:hover .buchstabe-v {
+  text-transform: lowercase;
+  padding-right: .13em;
+}
+.seiten-titel .roboto-cond:hover .buchstabe-t {
+  text-transform: lowercase;
+  padding-left: .13em;
+}
+.seiten-titel .merriweather {
+  text-align: right;
+  width: 100%;
+  display: block;
+}
+.seiten-titel .merriweather:hover {
+  font-weight: bold;
+}
+.start-bild {
+  width: calc(100% - 20px);
+  float: left;
+}
+.start-bild:hover {
+  transform: scaleX(-1);
+}
+/*** WETTER ***/
+.wetter h2 {
+  margin-top: 100px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.wetter h2:hover {
+  letter-spacing: .2em;
+}
+#regenschirm {
+  width: 70px;
+}
+/*** NEWS ***/
+.news {
+  margin-top: 100px;
+}
+.news h2 {
+  font-weight: bold;
+}
+.news h2:hover {
+  font-weight: lighter;
+}
+/*** FOOTER ***/
+footer {
+  margin-top: 100px;
+  border-top: 1px solid #000;
+  text-align: center;
+}
+footer a {
+  display: inline-block;
+  padding: 20px;
+  text-transform: uppercase;
+  color: #000;
+}
+
+
+/*** MENU ***/
+a.menu-burger {
+  text-transform: uppercase;
+  position: fixed;
+  right: 10%;
+  top: 20px;
+  color: #000;
+  padding-right: 5px;
+  z-index: 13;
+}
+a.menu-burger:hover {
+  text-transform: lowercase;
+  cursor: pointer;
+  letter-spacing: .1em;
+}
+div.menu-striche {
+  padding-top: 7px;
+  position: fixed;
+  top: 20px;
+  right: 0;
+  width: 10%;
+  z-index: 13;
+}
+div.menu-strich {
+  height: 2px;
+  margin-bottom: 16px;
+  background-color: #000;
+}
+
+
+/*** TICKETS ***/
+.tickets .bestelllink {
+  display: inline-block;
+  color: #000;
+  padding-left: 20px;
+  position: absolute;
+  margin-top: 20px;
+}
+.tickets .bestelllink:hover p {
+  margin-bottom: 1.9em;
+}
+.der-preis-ist-heiss {
+  margin: 20px 0;
+  padding: 20px;
+  color: #fff;
+  background-color: #000;
+  display: inline-block;
+}
+.der-preis-ist-heiss h2 {
+  display: inline;
+}
+#bestellformular {
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+}
+#bestellformular p {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+#bestellformular input {
+  width: 100%;
+  border: none;
+  border-left: 2px solid #fff;
+  background-color: #000;
+  color: #fff;
+  padding: 10px;
+  font-size: 1em;
+  margin-bottom: 30px;
+}
+#bestellformular input:focus {
+  outline: none;
+  border-left: 6px solid #fff;
+}
+
+
+
+
+/*** SPEZIAL ***/
+::selection {
+  background-color: #fff36e;
+  color: #fff;
+}
+
+
+
+
+/*** RESPONSIVE ***/
+@media only screen and (max-width: 1250px) {
+  img#logo {
+    position: relative;
+    top: 0;
+    width: 20%;
+    left: 40%;
+  }
+  img#logo-weiss {
+    display: none;
+  }
+  .wrapper {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  img#logo {
+
+    width: 40%;
+    left: 30%;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .col-50 {
+    width: 100%;
+  }
+  .col-25 {
+    width: 50%;
+  }
+}
