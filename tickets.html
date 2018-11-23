@@ -30,6 +30,7 @@
 
 </head>
 <body>
+      <div class="plane"></div>
   <div class="menu">
     <div class="text-align-right">
       <a class="menu-burger">
@@ -74,15 +75,18 @@
           <section class="der-preis-ist-heiss">
             <p>Aktueller Preis:</p><h2 id="preis" class="roboto-mono bold">1</h2><h2>.-</h2>
           </section>
-          <a href="#bestellformular" class="bestelllink">
+          <a class="bestelllink">
             <p>JETZT BESTELLEN</p>
             <p>JETZT BESTELLEN</p>
             <p>JETZT BESTELLEN</p>
           </a>
     </div>
-    <div class="row" id="bestellformular">
+    <div class="row bestellformular">
+      <p class="close roboto-mono bold">x</p>
       <form method="get">
         <div class="row">
+          <h3 class="roboto-mono bold">bestellformular </h3>
+          <img id="briefmarke" src="img/grafikelemente/briefmarke.svg" />
           <div class="col-50">
             <p class="label bold merriweather">VORNAME</p>
               <input type="text" name="vorname" autofocus />

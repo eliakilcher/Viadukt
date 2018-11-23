@@ -35,6 +35,19 @@ var i=1;
 var interval = window.setInterval('time()', 1000);
 
 
+/*** BESTELLEN ***/
+$(document).ready(function() {
+  $('.bestelllink').click(function(event) {
+    $(".bestellformular").addClass("dp-block");
+    $(".plane").addClass("dp-block");
+  });
+});
+$(document).ready(function() {
+  $('.close').click(function(event) {
+    $(".bestellformular").removeClass("dp-block");
+    $(".plane").removeClass("dp-block");
+  });
+});
 
 
 

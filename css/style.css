@@ -248,16 +248,24 @@ div.menu-strich {
 .der-preis-ist-heiss h2 {
   display: inline;
 }
-#bestellformular {
+.bestellformular {
   background-color: #000;
   color: #fff;
   padding: 20px;
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 60%;
+  left: 20%;
+  border: 2px solid #fff;
+  display: none;
+  z-index: 13;
 }
-#bestellformular p {
+.bestellformular p {
   display: inline-block;
   margin-bottom: 20px;
 }
-#bestellformular input {
+.bestellformular input {
   width: 100%;
   border: none;
   border-left: 2px solid #fff;
@@ -267,9 +275,56 @@ div.menu-strich {
   font-size: 1em;
   margin-bottom: 30px;
 }
-#bestellformular input:focus {
+.bestellformular h3 {
+  text-transform: uppercase;
+  font-size: 2em;
+  margin-bottom: 40px;
+  letter-spacing: .3em;
+}
+.bestellformular h3:hover {
+  text-transform: lowercase;
+}
+.bestellformular input:focus {
   outline: none;
   border-left: 6px solid #fff;
+}
+.plane {
+  display: block;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: #000;
+  z-index: 12;
+  display: none;
+}
+.close {
+  text-align: right;
+  position: absolute;
+  font-size: 1.3em;
+  top: -47px;
+  left: -2px;
+  background-color: #fff;
+  color: #000;
+  padding: 10px 14px;
+  border: 2px solid #fff;
+}
+.close:hover {
+  cursor: pointer;
+  color: #fff;
+  background-color: #000;
+}
+#briefmarke {
+  display: inline;
+  height: 64px;
+  width: 64px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+.dp-block {
+  display: block;
 }
 
 
@@ -280,6 +335,7 @@ div.menu-strich {
   background-color: #fff36e;
   color: #fff;
 }
+
 
 
 
