@@ -226,6 +226,23 @@ div.menu-strich {
   background-color: #000;
 }
 
+/*** TIMETABLE ***/
+.timetable .col-50:nth-child(1) {
+  padding-right: 10px;
+}
+.timetable .col-50:nth-child(2) {
+  padding-left: 10px;
+}
+.timetable img {
+  margin-top: 20px;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+.timetable img:hover {
+  filter: grayscale(0%);
+  -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+  transform: scaleX(-1);
+}
 
 /*** TICKETS ***/
 .tickets .bestelllink {
@@ -234,6 +251,9 @@ div.menu-strich {
   padding-left: 20px;
   position: absolute;
   margin-top: 20px;
+}
+.tickets .bestelllink:hover {
+  cursor: pointer;
 }
 .tickets .bestelllink:hover p {
   margin-bottom: 1.9em;
@@ -287,6 +307,19 @@ div.menu-strich {
 .bestellformular input:focus {
   outline: none;
   border-left: 6px solid #fff;
+}
+.bestellformular button {
+  color: #000;
+  border: 2px solid #fff;
+  width: 100%;
+  padding: 10px;
+  background-color: #fff;
+  font-size: 1.2em;
+}
+.bestellformular button:hover, .bestellformular button:focus {
+  color: #fff;
+  background-color: #000;
+   cursor: pointer;
 }
 .plane {
   display: block;
