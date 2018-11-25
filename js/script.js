@@ -6,6 +6,16 @@ $(document).ready(function() {
   });
 });
 
+
+/*** TIMER ***/
+function time() {
+    i++;
+    document.getElementById('preis').innerHTML = i;
+  }
+var i=1;
+var interval = window.setInterval('time()', 1000);
+
+
 /*** BESTELLEN ***/
 $(document).ready(function() {
   $('.bestelllink').click(function(event) {

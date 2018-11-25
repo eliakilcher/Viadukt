@@ -176,6 +176,12 @@ h2 {
 #regenschirm {
   width: 70px;
 }
+.temparatur {
+  font-weight: bold;
+  font-family: 'roboto mono', monospace;
+  float: right;
+  margin-right: 20px;
+}
 /*** NEWS ***/
 .news {
   margin-top: 100px;
@@ -278,6 +284,9 @@ button.print:hover {
 
 
 /*** TICKETS ***/
+.tickets {
+  margin-bottom: 40px;
+}
 .tickets .bestelllink {
   display: inline-block;
   color: #000;
@@ -392,7 +401,9 @@ button.print:hover {
 .dp-block {
   display: block;
 }
-
+.karte {
+  width: 100% !important;
+}
 
 
 
