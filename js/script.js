@@ -6,35 +6,6 @@ $(document).ready(function() {
   });
 });
 
-/*** PARALLAX ***/
-$(window).scroll(function(e){
-	parallax();
-});
-
-function parallax(){
-    var scrolled = $(window).scrollTop();
-    $('.parallax-01').css('top', -(scrolled * 0.1) + 'px');
-}
-
-/*** PARALLAX REGEMSCJRO ***/
-$(window).scroll(function(e){
-	regenschirm();
-});
-
-function regenschirm(){
-    var scrolled = $(window).scrollTop();
-    $('#regenschirm').css('margin-left', +(scrolled * 0.3) + 'px');
-}
-
-/*** TIMER ***/
-function time() {
-    i++;
-    document.getElementById('preis').innerHTML = i;
-  }
-var i=1;
-var interval = window.setInterval('time()', 1000);
-
-
 /*** BESTELLEN ***/
 $(document).ready(function() {
   $('.bestelllink').click(function(event) {

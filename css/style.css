@@ -227,10 +227,13 @@ div.menu-strich {
 }
 
 /*** TIMETABLE ***/
-.timetable .col-50:nth-child(1) {
+.timetable article {
+  margin-bottom: 40px;
+}
+.timetable .col-50:nth-child(odd) {
   padding-right: 10px;
 }
-.timetable .col-50:nth-child(2) {
+.timetable .col-50:nth-child(even) {
   padding-left: 10px;
 }
 .timetable img {
