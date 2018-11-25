@@ -139,7 +139,7 @@ h2 {
   font-size: 2em;
 }
 .seiten-titel .roboto-cond {
-  font-size: 2.6em;
+  font-size: 2.5em;
 }
 .seiten-titel .roboto-cond:hover .buchstabe-v {
   text-transform: lowercase;
@@ -262,6 +262,20 @@ div.menu-strich {
 .spielzeit {
   text-align: right;
 }
+button.print {
+  padding: 10px;
+  background-color: #fff;
+  border: 2px solid #000;
+  font-size: 1.2em;
+}
+button.print:hover {
+  cursor: pointer;
+  background-color: #000;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
 
 /*** TICKETS ***/
 .tickets .bestelllink {
