@@ -65,6 +65,9 @@ h2 {
   font-size: 3.6em;
   padding-bottom: 20px;
 }
+.lowercase-hover:hover {
+  text-transform: lowercase;
+}
 
 /*** MENU ***/
 .menu-links a.roboto-cond:hover {
@@ -230,10 +233,10 @@ div.menu-strich {
 .timetable article {
   margin-bottom: 40px;
 }
-.timetable .col-50:nth-child(odd) {
+.padding-10-right {
   padding-right: 10px;
 }
-.timetable .col-50:nth-child(even) {
+.padding-10-left {
   padding-left: 10px;
 }
 .timetable img {
@@ -245,6 +248,19 @@ div.menu-strich {
   filter: grayscale(0%);
   -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
   transform: scaleX(-1);
+}
+.tag {
+  margin-bottom: 20px;
+}
+.tag h3 {
+  font-size: 2em;
+  padding-bottom: 5px;
+}
+.oneact {
+  width: 100%;
+}
+.spielzeit {
+  text-align: right;
 }
 
 /*** TICKETS ***/
