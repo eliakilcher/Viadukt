@@ -192,6 +192,11 @@ h2 {
 .news h2:hover {
   font-weight: lighter;
 }
+.news h4 {
+  font-size: 1.2em;
+  padding-bottom: 5px;
+}
+
 /*** FOOTER ***/
 footer {
   margin-top: 100px;
@@ -448,5 +453,14 @@ button.print:hover {
   }
   .col-25 {
     width: 50%;
+  }
+  .wetter .col-25 {
+    margin-bottom: 20px;
+  }
+  .start-bild {
+    width: 100%;
+  }
+  .padding-10-right, .padding-10-left {
+    padding: 0;
   }
 }
