@@ -31,50 +31,6 @@ $(document).ready(function() {
 });
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-//
-//
-// /*** ONSCROLL NAV EVENT ***/
-// $(document).on("scroll",function(){
-//    if($(document).scrollTop()>1)
-//    {
-//         $("header").removeClass("nuet").addClass("header-scroll");
-//    }
-//    else
-//     {
-//         $("header").removeClass("header-scroll").addClass("nuet");
-//     }
-// });
-//
-//
-// $('a.burger').click(function(event) {
-//     $('a.burger').toggleClass('burger-cross');
-//     $('div.sidebar').toggleClass('sidebar-full');
-//     $('div.sidebar').toggleClass('sidebar-full-height');
-//     $('div.nav-bg').toggleClass('nav-bg-pos');
-// });
-//
-//
-//
-// /*** SCROLL DOWN ***/
-//
-// //var offsetHeight = document.getElementById('myDiv').offsetHeight;
-//
-//
-// $(document).ready(function() {
-//     $('.scroll-action').click(function(event){
-//         $('html, body').animate({scrollTop: '+=240px'}, 400);
-//     });
-// });
+function hochgeladen() {
+  alert("Vielen Dank! Dein Bild wird von uns geprüft und in kürze wird man es auf unserer Webseite bestaunen können. 🖐");
+}

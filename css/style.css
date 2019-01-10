@@ -414,7 +414,7 @@ button.print:hover {
 
 /*** SPEZIAL ***/
 ::selection {
-  background-color: #fff36e;
+  background-color: #ffff00;
   color: #fff;
 }
 
@@ -463,4 +463,181 @@ button.print:hover {
   .padding-10-right, .padding-10-left {
     padding: 0;
   }
+}
+
+
+
+/*** SOCIAL WALL ***/
+.social-wall h3 {
+  font-size: 1.6em;
+  margin: 20px 0;
+}
+.social-wall .bildeli {
+  display: block;
+  margin-bottom: 20px;
+}
+.social-wall .bildeli img {
+  max-height: 300px;
+  width: auto;
+  display: block;
+  margin-bottom: 10px;
+  max-width: 100%;
+}
+.social-wall .bildeli h4 {
+  margin-bottom: 5px;
+}
+.upload {
+  padding: 20px 0;
+  border: 1px solid #000;
+  padding: 20px;
+  margin: 0 -20px;
+}
+.upload input {
+  display: block;
+}
+.upload input[type=text] {
+  margin-bottom: 20px;
+  width: 100%;
+  padding: 5px 0 0 0;
+  outline: none;
+  margin-top: 5px;
+  border: none;
+  border-bottom: 1px solid #000;
+  font-weight: bold;
+  font-size: 1.1em;
+  font-family: 'Roboto Mono', sans-serif;
+}
+.upload #versenden {
+  background-color: #fff;
+  border: none;
+  color: #000;
+  display: block;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 1.1em;
+  font-family: 'Roboto Mono', sans-serif;
+  text-transform: uppercase;
+  width: 100%;
+  border: 1px solid #000;
+}
+.upload #versenden:hover {
+  background-color: #000;
+  color: #fff;
+  cursor: pointer
+}
+.upload #versenden:focus {
+  outline: none;
+}
+.staff-pick {
+  background-color: #ffff00;
+  padding: 5px 20px 20px 20px;
+  margin-left: -20px;
+  margin-right: -20px;
+}
+.staff-pick img {
+  max-height: 1000% !important;
+  max-width: 100%;
+  min-width: 100%;
+}
+input[type=file] {
+  height: 103px;
+}
+
+
+/*** CHeCKBOX **/
+.control {
+    font-family: arial;
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 25px;
+    padding-top: 3px;
+    cursor: pointer;
+    font-size: 16px;
+}
+    .control input {
+        position: absolute;
+        z-index: -1;
+        opacity: 0;
+    }
+.control_indicator {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background: #ffffff;
+    border: 1px solid #000000;
+}
+.control-radio .control_indicator {
+    border-radius: undefined%;
+}
+
+.control:hover input ~ .control_indicator,
+.control input:focus ~ .control_indicator {
+    background: #ffffff;
+}
+
+.control input:checked ~ .control_indicator {
+    background: #000000;
+}
+.control:hover input:not([disabled]):checked ~ .control_indicator,
+.control input:checked:focus ~ .control_indicator {
+    background: #000000;
+}
+.control input:disabled ~ .control_indicator {
+    background: #000000;
+    opacity: 0;
+    pointer-events: none;
+}
+.control_indicator:after {
+    box-sizing: unset;
+    content: '';
+    position: absolute;
+    display: none;
+}
+.control input:checked ~ .control_indicator:after {
+    display: block;
+}
+.control-checkbox .control_indicator:after {
+    left: 8px;
+    top: 4px;
+    width: 3px;
+    height: 8px;
+    border: solid #ffffff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+.control-checkbox input:disabled ~ .control_indicator:after {
+    border-color: #000000;
+}
+
+/** UPLPOAD ***/
+.upload-btn-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  margin: 0 0 20px 0;
+}
+
+.btn {
+  font-size: .9em;
+  border: 1px solid #000;
+  color: #000;
+  background-color: white;
+  padding: 40px 40px;
+  font-weight: bold;
+  font-family: 'Roboto Mono', monospace;
+}
+.upload-btn-wrapper:hover .btn {
+  background-color: #000;
+  color: #fff;
+}
+
+.upload-btn-wrapper input[type=file] {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
 }
