@@ -25,7 +25,6 @@
 
   <!-- SCRIPT -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
 
 </head>
@@ -180,8 +179,8 @@
           <label>Dein Name:</label><input required type="text" name="name" />
           <label>Titel des Bildes:</label><input required type="text" name="titel" />
           <div class="upload-btn-wrapper">
-            <button class="btn">Datei auswählen</button>
-            <input required type="file" name="myfile" accept="image/*, video/*" />
+            <button id="dateiname" class="btn">Datei auswählen</button>
+            <input id="file-upload" required type="file" name="myfile" accept="image/*, video/*" />
           </div>
           <label class="control control-checkbox">
             das Bild/Video darf auf dieser Seite verwendet werden.

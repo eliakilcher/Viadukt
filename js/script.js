@@ -8,12 +8,17 @@ $(document).ready(function() {
 
 
 /*** TIMER ***/
-function time() {
-    i++;
-    document.getElementById('preis').innerHTML = i;
-  }
-var i=1;
-var interval = window.setInterval('time()', 1000);
+var element = document.querySelect('.preis')
+if element {
+  function time() {
+      i++;
+      document.getElementById('preis').innerHTML = i;
+    }
+  var i=1;
+  var interval = window.setInterval('time()', 1000);
+}
+
+
 
 
 /*** BESTELLEN ***/
@@ -29,6 +34,19 @@ $(document).ready(function() {
     $(".plane").removeClass("dp-block");
   });
 });
+
+
+
+
+var fileInput = document.getElementById('file-upload');
+var filename = fileInput.files[0].name;
+
+
+document.getElementById(dateiname).innerText = filename;
+
+
+
+
 
 
 function hochgeladen() {
