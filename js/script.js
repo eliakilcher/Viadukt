@@ -8,8 +8,8 @@ $(document).ready(function() {
 
 
 /*** TIMER ***/
-var element = document.querySelect('.preis')
-if element {
+var element = document.querySelector('.preis')
+if(element) {
   function time() {
       i++;
       document.getElementById('preis').innerHTML = i;
@@ -35,14 +35,6 @@ $(document).ready(function() {
   });
 });
 
-
-
-
-var fileInput = document.getElementById('file-upload');
-var filename = fileInput.files[0].name;
-
-
-document.getElementById(dateiname).innerText = filename;
 
 
 
